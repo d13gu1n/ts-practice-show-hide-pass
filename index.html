@@ -77,6 +77,21 @@
                 </div>
             </form>
         </div>
-        <script src="src/index.ts"></script>
+        <script>
+            const inp = document.getElementById("Password");
+            const btn = document.getElementById("toggleVisibility");
+            if (inp && btn) {
+                btn.addEventListener("click", () => {
+                    if (inp.type === "password") {
+                        inp.type = "text";
+                        btn.textContent = "Shown";
+                    }
+                    else {
+                            inp.type = "password";
+                            btn.textContent = "Hidden";
+                        }
+                });
+            }
+        </script>
     </body>
 </html>
