@@ -12,3 +12,6 @@ npm-debug.log*
 
 # IDE files
 .vscode/
+
+# JS index files created by TSC
+index.js
