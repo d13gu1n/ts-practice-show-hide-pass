@@ -51,6 +51,8 @@
                 transform: translateY(-50%);
                 font-size: 18px;
                 padding: 0;
+                height: 10px;
+                width: 10px;
             }
             button:focus {
                 outline: none;
@@ -72,23 +74,23 @@
                             type="button"
                             id="toggleVisibility"
                             aria-label="Show Password"
-                        ></button>
+                        >👁️</button>
                     </div>
                 </div>
             </form>
         </div>
         <script>
-            const inp = document.getElementById("Password");
+            const inp = document.getElementById("password");
             const btn = document.getElementById("toggleVisibility");
             if (inp && btn) {
                 btn.addEventListener("click", () => {
                     if (inp.type === "password") {
                         inp.type = "text";
-                        btn.textContent = "Shown";
+                        btn.textContent = "🙈";
                     }
                     else {
                             inp.type = "password";
-                            btn.textContent = "Hidden";
+                            btn.textContent = "👁️";
                         }
                 });
             }
